@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KiroGT</title>
+
+    <link rel="icon" type="image/jpeg" href="KiroGT.jpg">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+
+        html{
+            scroll-behavior:smooth;
+        }
+
+        body{
+            font-family:'Poppins',sans-serif;
+            background:#0d0d12;
+            color:white;
+            line-height:1.8;
+        }
+
+        nav{
+            position:sticky;
+            top:0;
+            background:rgba(13,13,18,.95);
+            backdrop-filter:blur(10px);
+            border-bottom:1px solid #222;
+            z-index:1000;
+        }
+
+        .nav{
+            max-width:1000px;
+            margin:auto;
+            padding:18px 24px;
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+        }
+
+        .logo{
+            color:#a855f7;
+            font-size:1.4rem;
+            font-weight:700;
+        }
+
+        .links a{
+            color:white;
+            text-decoration:none;
+            margin-left:24px;
+            transition:.2s;
+        }
+
+        .links a:hover{
+            color:#c084fc;
+        }
+
+        header{
+            min-height:55vh;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            text-align:center;
+            padding:40px 20px;
+            background:
+                radial-gradient(circle at top,
+                rgba(168,85,247,.25),
+                transparent 60%);
+        }
+
+        .avatar{
+            width:180px;
+            height:180px;
+            border-radius:50%;
+            object-fit:cover;
+            border:4px solid #a855f7;
+            box-shadow:0 0 40px rgba(168,85,247,.4);
+        }
+
+        h1{
+            font-size:4rem;
+            margin-top:20px;
+        }
+
+        .subtitle{
+            color:#b8b8c8;
+            margin-top:10px;
+            font-size:1.1rem;
+        }
+
+        .container{
+            max-width:900px;
+            margin:auto;
+            padding:60px 24px;
+        }
+
+        section{
+            margin-bottom:80px;
+        }
+
+        h2{
+            color:#c084fc;
+            margin-bottom:20px;
+            font-size:2rem;
+        }
+
+        p{
+            color:#d7d7df;
+        }
+
+        .projects{
+            display:grid;
+            gap:30px;
+        }
+
+        .project{
+            padding-bottom:20px;
+            border-bottom:1px solid #222;
+        }
+
+        .project h3{
+            color:white;
+            margin-bottom:8px;
+        }
+
+        .contact a{
+            display:block;
+            color:#c084fc;
+            text-decoration:none;
+            margin-bottom:12px;
+            transition:.2s;
+        }
+
+        .contact a:hover{
+            color:white;
+        }
+
+        footer{
+            text-align:center;
+            padding:40px;
+            color:#777;
+            border-top:1px solid #222;
+        }
+
+        @media(max-width:700px){
+
+            h1{
+                font-size:2.8rem;
+            }
+
+            .avatar{
+                width:140px;
+                height:140px;
+            }
+
+            .nav{
+                flex-direction:column;
+                gap:15px;
+            }
+
+            .links a{
+                margin:0 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="nav">
+
+            <div class="logo">
+                KiroGT
+            </div>
+
+            <div class="links">
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+
+        </div>
+    </nav>
+
+    <header>
+
+        <div>
+
+            <img src="KiroGT.jpg"
+                 alt="KiroGT"
+                 class="avatar">
+
+            <h1>KiroGT</h1>
+
+            <p class="subtitle">
+                Programmer • Content Creator • Unity Developer
+            </p>
+
+        </div>
+
+    </header>
+
+    <main class="container">
+
+        <section id="about">
+
+            <h2>About Me</h2>
+
+            <p>
+                Hi! I'm KiroGT.
+            </p>
+
+            <br>
+
+            <p>
+                I'm a programmer, content creator, and developer who
+                enjoys building games, websites, Geometry Dash levels,
+                and creative digital projects.
+            </p>
+
+            <br>
+
+            <p>
+                I primarily work with Unity, C#, Blender,
+                Visual Studio, and Visual Studio Code.
+            </p>
+
+        </section>
+
+        <section id="projects">
+
+            <h2>Projects</h2>
+
+            <div class="projects">
+
+                <div class="project">
+                    <h3>Unity Projects</h3>
+                    <p>
+                        Games, prototypes, experiments,
+                        and creative development work.
+                    </p>
+                </div>
+
+                <div class="project">
+                    <h3>Geometry Dash</h3>
+                    <p>
+                        Level creation, gameplay design,
+                        and decoration projects.
+                    </p>
+                </div>
+
+                <div class="project">
+                    <h3>3D Art</h3>
+                    <p>
+                        Models, renders, and assets
+                        created in Blender.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section id="contact">
+
+            <h2>Contact</h2>
+
+            <div class="contact">
+
+                <a href="mailto:kirogtvr@gmail.com">
+                    📧 kirogtvr@gmail.com
+                </a>
+
+                <a href="https://youtube.com/@KiroGTVR" target="_blank">
+                    ▶ YouTube - @KiroGTVR
+                </a>
+
+                <a href="https://discord.gg/ebcQXkNRBW" target="_blank">
+                    💬 Discord Server
+                </a>
+
+                <a href="https://github.com/YOUR_USERNAME" target="_blank">
+                    💻 GitHub
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        © 2026 KiroGT
+    </footer>
+
+</body>
+</html>
